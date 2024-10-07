@@ -1,0 +1,243 @@
+.Third-hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 10rem;
+      background-color: #00030a;
+      color: #fff;
+      position: relative;
+}
+
+.Third-hero-section img {
+      width: 650px;
+}
+
+.image-section {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      margin-right: 0px;
+      /* Reduced margin */
+}
+
+.image-section img {
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1.15);
+      /* Initial scale of 1.15 */
+}
+
+
+.car-details {
+      flex: 0.45;
+      padding: 40px;
+      background-color: #00030a;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 45px;
+      color: #fff;
+      font-weight: bold;
+}
+
+ul {
+      list-style: none;
+      padding: 0;
+}
+
+.car-details ul li {
+      margin-bottom: 25px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      font-weight: lighter;
+}
+
+.buttons {
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      position: relative;
+      z-index: 1000;
+}
+
+.car-details .buttons button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #00030a;
+      border: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.car-details .buttons button:hover {
+      background-color: #121a30;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-right-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      left: 2%;
+      transform: translateX(-10%);
+      width: 96%;
+      top: 90%;
+      transform: translateY(-90%);
+}
+
+.modal-overlay {
+      position: fixed;
+      top: 80px;
+      left: 109px;
+      width: 86%;
+      height: 80%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 20000;
+      margin: auto;
+}
+
+.modal-content {
+      position: relative;
+      background-color: #00030a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+}
+
+.modal-content img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+      margin: auto;
+}
+
+.close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: white;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+}
+
+.prev-button,
+.next-button {
+      background: transparent;
+      color: white;
+      font-size: 32px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+.modal-content button svg {
+      fill: #D8E2E3;
+      width: 34px;
+}
+
+.prev-button {
+      left: 10px;
+}
+
+.next-button {
+      right: 10px;
+}
+
+@media (max-width: 1200px) {
+      .Third-hero-section {
+            padding: 2rem 5rem;
+      }
+
+      .car-details {
+            flex: 0.6;
+      }
+
+      .Third-hero-section img {
+            width: 450px;
+      }
+
+      .modal-overlay {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+      }
+
+}
+
+
+@media (max-width:1024px) {
+      .car-details h2 {
+            font-size: 30px;
+      }
+
+      .car-details ul li {
+            font-size: 17px;
+      }
+
+      .car-details .buttons button {
+            font-size: 13px;
+            padding: 10px;
+      }
+
+      .Third-hero-section {
+            padding: 2rem 4rem;
+      }
+
+}
+
+@media (max-width:900px) {
+      .Third-hero-section img {
+            width: 380px;
+      }
+
+      .Third-hero-section {
+            padding: 2rem 3rem;
+      }
+
+      .car-details h2 {
+            font-size: 26px;
+      }
+}
+
+@media (max-width:768px) {
+      .Third-hero-section {
+            flex-direction: column;
+            padding: 3rem;
+      }
+
+      .Third-hero-section img {
+            width: 425px;
+      }
+
+      .Third-hero-section .car-details {
+            width: 100%;
+      }
+
+}
+
+@media (max-width:501px) {
+      .modal-content button svg {
+            width: 15px;
+      }
+}

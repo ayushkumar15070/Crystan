@@ -1,0 +1,106 @@
+.contact-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10rem 10rem 6.2rem;
+      background-color: #00030a;
+      color: #D8E2E3;
+      gap: 2rem;
+}
+
+.contact-us .contact-left-section h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+}
+
+.contact-us .contact-left-section {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-direction: column;
+}
+
+.contact-us .contact-left-section img {
+      width: 400px;
+      border-radius: 34px;
+}
+
+.contact-us .contact-right-section>p:nth-child(1) {
+      margin-bottom: 20px;
+}
+
+.contact-us .contact-right-section {
+      width: 40%;
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      flex-direction: column;
+}
+
+.contact-right-section .contact-right-bottom-section .social-media-section {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+.contact-right-section .contact-right-bottom-section .social-media-section svg {
+      fill: #D8E2E3;
+      width: 50px;
+}
+
+.contact-right-section .contact-right-bottom-section {
+      border-top: 10px solid #D8E2E3;
+      border-radius: 10px;
+      margin-top: 50px;
+}
+
+@media (max-width:1200px) {
+      .contact-us {
+            padding: 5rem;
+            height: 100vh;
+      }
+
+      .contact-us .contact-left-section h1 {
+            font-size: 34px;
+      }
+
+
+      .contact-us .contact-right-section p {
+            font-size: 15px;
+      }
+
+      .contact-us .contact-right-bottom-section h1 {
+            font-size: 20px;
+      }
+}
+
+@media (max-width:1024px) {
+      .contact-us {
+            padding: 3rem;
+      }
+
+}
+
+@media (max-width:501px) {
+      .contact-us {
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 5rem 1rem;
+      }
+
+      .contact-us .contact-left-section,
+      .contact-us .contact-right-section {
+            width: 100%;
+      }
+
+      .contact-us .contact-right-section {
+            align-items: center;
+            text-align: center;
+      }
+
+}
