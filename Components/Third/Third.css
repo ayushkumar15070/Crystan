@@ -241,3 +241,14 @@ ul {
             width: 15px;
       }
 }
+
+@media (max-width:430px) {
+      .car-details .buttons button {
+            font-size: 12px;
+      }
+
+      .car-details .buttons {
+            gap: 10px;
+      }
+
+}
